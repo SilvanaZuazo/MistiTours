@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Misti-Tours</title>
+    </head>
+    <body>
+
+        <!--==================== HEADER ====================-->
+        <header class="header">              
+            <a href="" class="logo"><i class="ri-suitcase-2-fill"></i>Misti Tours</a>       
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#promotions">Promociones</a></li>
+                <li><a href="#destination">Destino</a></li>   
+                <li><a href="#contact">Contacto</a></li>              
+            </ul>
+        </header>
+
+        <main>
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container section">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Prepara tus maletas. <br> Tu próxima aventura te espera. 
+                        </h1>
+                        <div class="home__details">
+                            <p class="home__description">
+                                Tu viaje perfecto por el corazón de Perú empieza aquí, diseñado a tu medida para que cada momento sea inolvidable.      
+                            </p>
+                            <a href="#about" class="button button--flex">
+                                Explora <i class="ri-arrow-right-up-line button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <img src="assets/img/hero.png" alt="" class="home__img">
+                </div>
+            </section>   
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/home.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Tu Compañero de Viajes en Perú 
+                        </h2>
+
+                        <p class="about__description">
+                            Nuestra historia comenzó con el sueño compartido de tres amigos viajeros 
+                            que, después de recorrer diversos destinos del país, decidieron crear una 
+                            agencia que ofreciera experiencias auténticas, accesibles y seguras para 
+                            todos los aventureros que desean explorar el Perú.
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Misión: Ofrecer experiencias de viaje únicas, seguras y memorables, acercando a los viajeros a la riqueza natural, cultural y gastronómica del Perú
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Visión: Ser la agencia de viajes líder en el Perú en turismo nacional, reconocida por su compromiso con la calidad, la autenticidad y la satisfacción de cada viajero.
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>  
+            
+            <!--==================== CUSTOMER ====================-->
+            <section class="customer section container">
+                <div class="customer__bg">
+                    <h2 class="section__title-center customer__title">
+                        Lo que dicen nuestros viajeros
+                    </h2>
+
+                    <div class="customer__container grid">
+                        <div class="customer__card">
+                            <div class="customer__card-number">
+                                <img src="assets/img/uno.png" alt="">
+                            </div>
+                            <h3 class="customer__card-title">Camila R</h3>
+                            <p class="customer__card-description">
+                                "Una experiencia increíble. Todo fue muy fácil y bien organizado."
+                            </p>
+                        </div>
+
+                        <div class="customer__card">
+                            <div class="customer__card-number">
+                                <img src="assets/img/dos.png" alt="">
+                            </div>
+                            <h3 class="customer__card-title">José M.</h3>
+                            <p class="customer__card-description">
+                                "Los paisajes superaron mis expectativas. ¡Quiero repetir el viaje!"
+
+                            </p>
+                        </div>
+
+                        <div class="customer__card">
+                            <div class="customer__card-number">
+                                <img src="assets/img/tres.png" alt="">
+                            </div>
+                            <h3 class="customer__card-title">Lucía V.</h3>
+                            <p class="customer__card-description">
+                                "Excelente servicio, seguro y con atención personalizada en todo momento."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>     
+
+            <!--==================== PROMOTIONS ====================-->
+            <section class="promotions-section section container" id="promotions">
+                <div class="promotions-header">
+                    <h2 class="promotions__title">Promociones Exclusivas: Tu Aventura al Mejor Precio</h2>
+                    <p>¡No dejes pasar la oportunidad de vivir experiencias inolvidables con la calidad y el servicio que nos caracterizan!</p>
+                </div>
+
+                <div class="promotions-grid">
+                    <div class="promotion-card card-selva">
+                        <div class="promotion-content">
+                            <h3>Aventura en la Selva</h3>
+                            <p>Hasta 25% de descuento en paquetes seleccionados</p>
+                        </div>
+                    </div>
+
+                    <div class="promotion-card card-playa">
+                        <div class="promotion-content">
+                            <h3>Escapada a la Playa</h3>
+                            <p>Ofertas especiales en hoteles frente al mar</p>
+                        </div>
+                    </div>
+
+                    <div class="promotion-card card-nazca">
+                        <div class="promotion-content">
+                            <h3>Sobrevuelo en Nazca</h3>
+                            <p>10% de descuento en tours aéreos</p>
+                        </div>
+                    </div>
+
+                    <div class="promotion-card card-cusco">
+                        <div class="promotion-content">
+                            <h3>Aventura en Cusco</h3>
+                            <p>Hasta 30% de descuento en paquetes seleccionados</p>
+                        </div>
+                    </div>
+                </div>
+            </section>                  
+
+
+            <!--==================== STEPS ====================-->
+            <div class="steps section">
+                <div class="steps-header container">
+                    <h2 class="section__title section__title-center">Nuestros Destinos: El Corazón de Perú te Espera</h2>
+                    <p class="steps__escription">En Misti Tours, te invitamos a explorar la inmensa diversidad del Perú profundo. Desde las cumbres andinas que tocan el cielo, pasando por los misterios de la selva amazónica, hasta las huellas de civilizaciones ancestrales en la costa, cada destino es una historia por vivir.</p>
+                </div>                
+                <div class="steps__bg container">
+                    <input name="category-css" id="all" type="radio" checked>
+                    <input name="category-css" id="costa" type="radio">
+                    <input name="category-css" id="sierra" type="radio">
+                    <input name="category-css" id="selva" type="radio">
+                    
+                    <ul class="list-category">
+                        <li><label for="all">Todos</label></li>
+                        <li><label for="costa">Costa</label></li>
+                        <li><label for="sierra">Sierra</label></li>
+                        <li><label for="selva">Selva</label></li>
+                    </ul>
+
+
+                    <ul class="list-images">
+                        <li class="type-sierra steps__card"><span>
+                            <img src="assets/img/product1.png" alt="" class="steps__img">
+                        </span></li>
+                        <li class="type-costa steps__card"><span>
+                            <img src="assets/img/product2.png" alt="" class="steps__img">
+                        </span></li>
+                        <li class="type-sierra steps__card"><span>
+                            <img src="assets/img/product3.png" alt="" class="steps__img">
+                        </span></li>
+                        <li class="type-sierra steps__card"><span>
+                            <img src="assets/img/product4.png" alt="" class="steps__img">
+                        </span></li>
+                        <li class="type-selva steps__card"><span>
+                            <img src="assets/img/product5.png" alt="" class="steps__img">
+                        </span></li>
+                        <li class="type-sierra steps__card"><span>
+                            <img src="assets/img/product6.png" alt="" class="steps__img">
+                        </span></li>
+                    </ul>
+                </div>
+            </div>
+            
+           <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Contáctanos hoy mismo <br>a través de nuestra <br>información de contacto.
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Llámanos para atención inmediata</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +999 999 999
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Escríbenos por correo electrónico</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    mistitours@email.com
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Síguenos en Redes Sociales</h3>
+                                <span class="contact__description">
+                                    <i class="ri-instagram-line contact__icon"></i>
+                                    <i class="ri-youtube-line contact__icon"></i>
+                                    <i class="ri-twitter-line contact__icon"></i>
+                                </span>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Correo</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Teléfono</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Mensaje</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Enviar Mensaje
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-suitcase-2-fill footer__logo-icon"></i> Misti Tours
+                    </a>
+
+                    <h3 class="footer__title">
+                        Suscríbete a nuestro boletín <br> para mantenerte al día.
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Ingresar Correo" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribete
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Nuestra Dirección</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">1234 - Peru</li>
+                        <li class="footer__information">La Libertad - 43210</li>
+                        <li class="footer__information">123-456-789</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contactanos</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+999 999 9999</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Aceptamos tarjetas de crédito y débito
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Arquitectura Web-Sise</p>
+        </footer>
+        
+            <!--=============== SCROLL UP ===============-->
+        </main>    
+    </body>
+</html>
