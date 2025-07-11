@@ -18,9 +18,9 @@
 
   /*========== Font and typography ==========*/
   --body-font: "Lato", sans-serif;
-  --big-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
+  --big-font-size: 2.2rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.65rem;
   --h3-font-size: 1rem;
   --normal-font-size: .838rem;
   --small-font-size: .813rem;
@@ -139,7 +139,7 @@ img{
 /*=============== BUTTONS ===============*/
 .button{
   display: inline-block;  
-  color: #FFF;
+  color: var(--text-color);
   padding: 1rem 1.75rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
@@ -148,7 +148,8 @@ img{
 }
 
 .button:hover{
-  background-color: var(--first-color-lighten);
+  background-color: var(--first-color);
+  border: 1px solid var(--first-color-light);
 }
 
 .button__icon{
@@ -228,10 +229,8 @@ img{
   letter-spacing: -1px;
 }
 
-.ri-suitcase-2-fill{
-  padding-right: .3rem;
-  font-size: 1.4rem;
-  color: var(--first-color-light);
+.logo:hover{
+  color: var(--first-color-lighten);
 }
 
 .header .menu {
@@ -287,7 +286,7 @@ img{
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
+  background: black;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
@@ -361,6 +360,7 @@ img{
 .about__img{
   width: 280px;
   justify-self: center;
+  padding-bottom: 1.5rem;
 }
 
 .about__title{
@@ -393,11 +393,15 @@ img{
   background-color: var(--first-color);
   padding: 3rem 2rem 2rem;
   border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .customer__container{
   gap: 2rem;
   padding-top: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .customer__title{
@@ -406,8 +410,9 @@ img{
 
 .customer__card{
   background-color: var(--first-color-lighten);
-  padding: 2.5rem 3rem 2rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 1rem;
+  max-width: 280px;
 }
 
 .customer__card-number{
@@ -454,14 +459,14 @@ img{
     line-height: 1.6;
 }
 
-.promotions-grid {
+.promotions-grid{
     display: grid;
     gap: 1rem;
     height: 500px;
     min-height: 500px;
 }
 
-.promotion-card {
+.promotion-card{
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -476,7 +481,7 @@ img{
     cursor: pointer;  
 }
 
-.promotion-card::before {
+.promotion-card::before{
     content: '';
     position: absolute;
     top: 0;
@@ -507,19 +512,19 @@ img{
 }
 
 .card-selva{
-    background-image: url('/assets/img/card-selva.jpg');
+    background-image: url('https://images.pexels.com/photos/18927691/pexels-photo-18927691.jpeg');
 }
 
 .card-playa{
-    background-image: url('/assets/img/card-playa.jpg');
+    background-image: url('https://images.pexels.com/photos/1822745/pexels-photo-1822745.jpeg');
 }
 
 .card-nazca{
-    background-image: url('/assets/img/card-nazca.jpg');
+    background-image: url('https://images.pexels.com/photos/17428774/pexels-photo-17428774.jpeg');
 }
 
 .card-cusco{
-    background-image: url('/assets/img/card-cusco.jpg');
+    background-image: url('https://images.pexels.com/photos/23531586/pexels-photo-23531586.jpeg');
 }
 
 
@@ -554,7 +559,7 @@ img{
 	cursor: pointer;
 	background: var(--first-color-alt);
 	border-radius: 3px;
-	padding: 12px 16px;
+	padding: 8px 10px;
 	transition: all 0.2s ease;
 }
 
@@ -688,7 +693,6 @@ img{
   resize: none;
 }
 
-/*Input focus move up label*/
 .contact__input:focus + .contact__label{
   top: -.75rem;
   left: 0;
@@ -696,7 +700,6 @@ img{
   z-index: 10;
 }
 
-/*Input focus sticky top label*/
 .contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
   top: -.75rem;
   font-size: var(--smaller-font-size);
@@ -716,7 +719,7 @@ img{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
-  color: var(--title-color);
+  color: var(--first-color-light);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -1px;
@@ -726,11 +729,11 @@ img{
 
 .footer__logo-icon{
   font-size: 1.15rem;
-  color: var(--title-color);
+  color: var(--first-color-light);
 }
 
 .footer__logo:hover{
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 
 .footer__title{
@@ -814,7 +817,7 @@ img{
   }  
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 640px){
   .promotions-grid {
       height: 45vh;
       min-height: 350px;
@@ -823,9 +826,10 @@ img{
   .promotion-card {
       padding: 15px;
   }
-  .promotions-header h2 {
-      font-size: 2rem;
-  }  
+  .list-category label {
+    display: inline-block;
+    padding: 12px 16px;
+  }   
   .footer__subscribe{
     width: 400px;
   }  
@@ -851,15 +855,15 @@ img{
   }  
 }
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   body{
     margin: 0;
+  }
+  .header li a {
+    padding: 20px 10px;
   }  
-  .header .logo { 
-    margin-left: 3rem;
-  } 
   .home{
-    padding: 1.5rem 0 1rem;
+    padding: 7rem 0 1rem;
     justify-content: center;
   }   
   .home__data{
@@ -867,6 +871,9 @@ img{
     justify-content: space-between;
     align-items: center;
   }  
+  .home__details{
+    width: 40%;
+  }
   .promotions-grid {
       height: 50vh;
       min-height: 400px;
@@ -874,9 +881,6 @@ img{
   .promotion-card {
       padding: 20px;
   }
-  .promotions-header h2 {
-      font-size: 2.5rem;
-  }   
   .steps__card{
     grid-template-columns: repeat(3, 1fr);
   }  
@@ -890,6 +894,9 @@ img{
       text-align: center;
       padding: 12px 20px;
   }
+ .customer__container{
+    grid-template-columns: repeat(3, 1fr);
+  }  
   .about__container,
   .contact__container,
   .footer__container{
@@ -903,10 +910,10 @@ img{
   }  
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1024px){
   .container{
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: var(--mb-1-5);
+    margin-left: var(--mb-1-5);
   }
   .section{
     padding: 8rem 0 1rem;
@@ -914,7 +921,14 @@ img{
   .section__title,
   .section__title-center{
     font-size: var(--h1-font-size);
-  }  
+  }
+  .header .menu{
+    margin-right: 6.5rem;
+  }
+  .home{
+    padding: 2rem 0 1rem;
+    justify-content: center;
+  }    
   .home__img{
     width: 100%;
     height: 350px;
@@ -923,16 +937,16 @@ img{
     width: 30%;
   }
   .about__img{
-    width: 380px;
+    width: 450px;
   } 
   .customer__container{
     grid-template-columns: repeat(3, 1fr);
+  }  
+  .list-images{
+    grid-template-columns: repeat(3, 1fr);
   } 
- .list-images{
-  grid-template-columns: repeat(3, 1fr);
- } 
   .steps__card{
-    width: 380px;
+    width: 300px;
   }
   .footer__logo{
     font-size: var(--h3-font-size);
@@ -945,7 +959,7 @@ img{
   }  
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1280px){
   .about__container{
     column-gap: 7rem;
   }  
