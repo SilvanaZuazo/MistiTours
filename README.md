@@ -14,7 +14,6 @@ El sitio está construido con un enfoque en la simplicidad, la eficiencia y el u
 * **Promociones:** Un espacio para destacar ofertas y paquetes especiales.
 * **Contacto:** Formulario y detalles de contacto para facilitar la comunicación con los clientes.
 * **Diseño Responsivo:** Adaptabilidad a diferentes tamaños de pantalla (escritorio, tablet, móvil) para una óptima experiencia de usuario.
-* **Modo Oscuro (Dark Mode):** Implementación de un tema oscuro que se adapta automáticamente a la preferencia del sistema operativo del usuario (`prefers-color-scheme`), usando CSS puro.
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -37,15 +36,6 @@ Para ver el proyecto en tu navegador, sigue estos sencillos pasos:
 ## 👨‍💻 Equipo: 
 
 * **[Silvana Guardia - Fernando Flores - Smith Trujillo]**
-
-## 💡 Posibles Mejoras Futuras (Fuera del Alcance Actual)
-
-Si en un futuro se permitiera el uso de JavaScript, se podrían considerar las siguientes mejoras:
-
-* **Alternador de Tema Manual:** Un botón para que el usuario pueda cambiar entre modo claro y oscuro a voluntad, independientemente de la configuración del sistema.
-* **Validación de Formulario:** Validaciones en tiempo real para el formulario de contacto.
-* **Galerías de Imágenes Interactivas:** Carruseles o galerías con navegación.
-* **Animaciones Avanzadas:** Efectos más complejos al hacer scroll o interactuar.
 
 ---
 
